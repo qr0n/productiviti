@@ -1,0 +1,5 @@
+*.db
+*.png
+*.sql
+__pycache__
+modules/database_queries
