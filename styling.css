@@ -1,0 +1,279 @@
+/* ======================================================
+   Catppuccin Mocha  –  Task Board TUI
+   ====================================================== */
+
+/* ---------- global ---------- */
+Screen {
+    background: #1e1e2e;
+    color: #cdd6f4;
+}
+
+/* ---------- header ---------- */
+#app-header {
+    height: 3;
+    background: #181825;
+    border-bottom: tall #313244;
+    align: left middle;
+    padding: 0 2;
+}
+
+#header-title {
+    color: #cba6f7;
+    text-style: bold;
+    width: 1fr;
+}
+
+#header-date {
+    color: #585b70;
+    width: auto;
+    content-align: right middle;
+}
+
+/* ---------- filter bar ---------- */
+#filter-bar {
+    height: 3;
+    background: #181825;
+    border-bottom: tall #313244;
+    align: left middle;
+    padding: 0 1;
+}
+
+.tab-btn {
+    background: transparent;
+    color: #585b70;
+    border: none;
+    padding: 0 2;
+    min-width: 14;
+    height: 3;
+}
+
+.tab-btn:hover {
+    background: #313244;
+    color: #cdd6f4;
+}
+
+.tab-btn.tab-active {
+    color: #89b4fa;
+    text-style: bold;
+    border-bottom: tall #89b4fa;
+}
+
+/* ---------- main split ---------- */
+#main-body {
+    height: 1fr;
+}
+
+#task-list-pane {
+    width: 2fr;
+    border-right: tall #313244;
+    background: #1e1e2e;
+}
+
+/* ---------- data table ---------- */
+DataTable {
+    background: #1e1e2e;
+    height: 1fr;
+}
+
+DataTable > .datatable--header {
+    background: #313244;
+    color: #b4befe;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #313244;
+    color: #cdd6f4;
+    text-style: bold;
+}
+
+DataTable > .datatable--even-row {
+    background: #181825;
+}
+
+/* ---------- detail pane ---------- */
+#task-detail-pane {
+    width: 1fr;
+    background: #181825;
+    padding: 1 2;
+}
+
+TaskDetailPanel {
+    background: transparent;
+    height: 1fr;
+}
+
+#detail-title {
+    color: #cdd6f4;
+    text-style: bold;
+    margin-bottom: 1;
+    height: auto;
+}
+
+#detail-rule {
+    color: #313244;
+    margin-bottom: 1;
+}
+
+#detail-description {
+    color: #a6adc8;
+    height: auto;
+    margin-bottom: 2;
+}
+
+#detail-meta-1,
+#detail-meta-2,
+#detail-meta-3 {
+    height: 1;
+    color: #9399b2;
+}
+
+#detail-status {
+    margin-top: 2;
+    height: 1;
+    text-style: bold;
+}
+
+/* ---------- add / edit modal ---------- */
+AddEditTaskModal {
+    align: center middle;
+}
+
+#modal-container {
+    background: #313244;
+    border: tall #585b70;
+    padding: 1 2;
+    width: 62;
+    height: auto;
+    max-height: 90%;
+}
+
+#modal-title {
+    color: #cba6f7;
+    text-style: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+.field-label {
+    color: #6c7086;
+    margin-top: 1;
+    height: 1;
+}
+
+Input {
+    background: #1e1e2e;
+    border: tall #45475a;
+    color: #cdd6f4;
+}
+
+Input:focus {
+    border: tall #89b4fa;
+}
+
+TextArea {
+    background: #1e1e2e;
+    border: tall #45475a;
+    color: #cdd6f4;
+    height: 5;
+}
+
+TextArea:focus {
+    border: tall #89b4fa;
+}
+
+Select {
+    background: #1e1e2e;
+    border: tall #45475a;
+    color: #cdd6f4;
+}
+
+Select:focus {
+    border: tall #89b4fa;
+}
+
+#modal-buttons {
+    margin-top: 1;
+    align: right middle;
+    height: auto;
+}
+
+/* ---------- buttons ---------- */
+Button {
+    margin-left: 1;
+}
+
+Button.-default {
+    background: #45475a;
+    color: #cdd6f4;
+    border: none;
+}
+
+Button.-primary {
+    background: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    text-style: bold;
+}
+
+Button.-error {
+    background: #f38ba8;
+    color: #1e1e2e;
+    border: none;
+    text-style: bold;
+}
+
+Button:hover.-default {
+    background: #585b70;
+}
+
+Button:hover.-primary {
+    background: #b4befe;
+}
+
+Button:hover.-error {
+    background: #eba0ac;
+}
+
+/* ---------- confirm modal ---------- */
+ConfirmModal {
+    align: center middle;
+}
+
+#confirm-container {
+    background: #313244;
+    border: tall #f38ba8;
+    padding: 2 3;
+    width: 52;
+    height: auto;
+}
+
+#confirm-message {
+    color: #cdd6f4;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2;
+    height: auto;
+}
+
+#confirm-buttons {
+    align: center middle;
+    height: auto;
+}
+
+/* ---------- footer ---------- */
+Footer {
+    background: #181825;
+    color: #585b70;
+}
+
+Footer > .footer--key {
+    background: #313244;
+    color: #89b4fa;
+    text-style: bold;
+}
+
+Footer > .footer--description {
+    color: #9399b2;
+}
